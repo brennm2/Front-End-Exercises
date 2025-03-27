@@ -77,8 +77,9 @@ img {
 	transform: translate(-50%, -50%);
 	width: 95%;
 	height: 80%;
-	background-color: rgba(48, 47, 47, 0.548);
 	border-radius: 50px;
+	backdrop-filter: blur(2px);
+	background-color: rgba(48, 47, 47, 0.548);
 	outline: 3px solid rgb(3, 205, 255);
 	outline-offset: -2px;
 	/* outline: 2px solid rgb(3, 205, 255); */
