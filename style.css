@@ -1,0 +1,103 @@
+
+img {
+	position: relative;
+	top: 50%;
+	left: 10.3%;
+	transform: translate(-50%, -50%);
+	width: 82px;
+	height: 82px;
+	object-fit: cover;
+	border-radius: 50px;
+	float: left;
+	/* margin-right: 10px; */
+	filter: drop-shadow(6px 0px 0.75rem rgb(0, 0, 0));
+	/* outline: 3px solid black;
+	outline-offset: -2px; */
+
+}
+.userName {
+	font-weight: bold;
+	font-family: Ubuntu-Bold;
+	font-size: 20px;
+	text-shadow: 0px 0px 5px #000;
+	
+	color: rgb(226, 141, 12)
+}
+.userQuote{
+	font-family: Ubuntu-Italic;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	max-width: 360px;
+	text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+	color: rgb(255, 255, 255)
+	
+}
+.profile{
+	position: relative;
+	background-color: rgba(36, 179, 235, 0.753);
+	background-image: url("images/piscineBG.jpg");
+	width: 500px;
+	height: 100px;
+	border-radius: 50px;
+}
+.profileImage{
+	z-index: 2;
+	position: relative;
+}
+.profileText{
+	position: absolute;
+	z-index: 1;
+	top: 0%;
+	left: 22%;
+	/* transform: translate(-50%, -50%); */
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.profileInfo{
+	display: flex;
+	position: absolute;
+	right: 8%;
+	gap: 5px;
+	font-family: Ubuntu-Bold;
+	color: rgb(16, 218, 218);
+	text-shadow: 0px 0px 5px #000;
+}
+.profileRank{
+
+}
+.profileTime{
+
+}
+.profileTextBG{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 95%;
+	height: 80%;
+	background-color: rgba(48, 47, 47, 0.548);
+	border-radius: 50px;
+	outline: 3px solid rgb(3, 205, 255);
+	outline-offset: -2px;
+	/* outline: 2px solid rgb(3, 205, 255); */
+	z-index: 0;
+}
+main{
+	height: 100vh;
+	background-color: rgb(136, 95, 95);
+}
+@font-face {
+	font-family: Ubuntu-Regular;
+	src: url(fonts/Ubuntu-Regular.ttf);
+}
+@font-face {
+	font-family: Ubuntu-Bold;
+	src: url(fonts/Ubuntu-Bold.ttf);
+}
+@font-face {
+	font-family: Ubuntu-Italic;
+	src: url(fonts/Ubuntu-Italic.ttf);
+}
+
