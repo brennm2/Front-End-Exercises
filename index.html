@@ -2,20 +2,42 @@
 <html>
 	<head>
 		<title>Free ft_transcendence</title>
-	<link rel="stylesheet" href="./style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="reset.css" /> -->
+	<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
-	<body>
-		<main>
-			<div class="profile">
-				<img class="profileImage" src="images/bde-souz.jpg" />
-				<div class="profileTextBG"></div>
-				<div class="profileText">
-					<p class="userName">@bde-souz</p>
-					<p class="userQuote">Lorem ipsum dolor sit amet</p>
+	<body style="height: 100vh; margin: 0;">
+		<div class="bgImg"></div>
+		<main id="mainDiv">
+			<div class="centerDiv">
+				<div class="middleDiv">
+					<p class="middleDivText">Created by: Brendon Vianna</p>
+					<div class="middleDivIcons">
+						<img src="images/linkedin.png"></img>
+						<img src="images/github.png"></img>
+					</div>
 				</div>
-				<div class="profileInfo">
-					<p class="profileTime" id="example">Getting current time...</p>
-					<p class="profileRank">Rank: 6</p>
+				<div class="profile" style="transform:scale(1.5);">
+					<img class="profileImage" src="images/bde-souz.jpg" />
+						<div class="profileTextBG"></div>
+						<div class="profileText">
+							<p class="userName">@bde-souz</p>
+							<p class="userQuote">Lorem ipsum dolor sit amet</p>
+						</div>
+						<div class="profileInfo" >
+							<p class="profileTime" id="time">Getting current time...</p>
+							<p class="profileRank">Rank: 6</p>
+						</div>
+					</div>
+					
+					<div class="box">
+						<div class="boxBG">
+							<div class="boxText">
+								<p class="boxTextTitle">Generate your on profile</p>
+								<input type="text" autocomplete="off" name="text" class="inputNick" placeholder="Username">
+								<input type="text" autocomplete="off" name="text" class="inputQuote" placeholder="Quote">
+								<button class="boxButton">Generate</button>
+							</div>
+						</div>
 				</div>
 			</div>
 		</main>

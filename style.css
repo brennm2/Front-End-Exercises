@@ -1,4 +1,3 @@
-
 img {
 	position: relative;
 	top: 50%;
@@ -16,12 +15,25 @@ img {
 
 }
 .userName {
-	font-weight: bold;
 	font-family: Ubuntu-Bold;
+	font-weight: bold;
 	font-size: 20px;
-	text-shadow: 0px 0px 5px #000;
-	
-	color: rgb(226, 141, 12)
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.5), 0 0 1px rgba(0, 0, 0, 0.5), 0 0 1px rgba(0, 0, 0, 0.5), 0 0 1px rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.144);
+	backdrop-filter: blur(3px);
+	border-top-right-radius: px;
+	border-bottom-right-radius: 50px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	max-width: 130px;
+	width: 120px;
+	height: 25px;
+
+
+
+
+color: rgb(226, 141, 12)
 }
 .userQuote{
 	font-family: Ubuntu-Italic;
@@ -31,10 +43,11 @@ img {
 	max-width: 360px;
 	text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
 	color: rgb(255, 255, 255)
-	
+
 }
 .profile{
 	position: relative;
+	margin-top: 100px;
 	background-color: rgba(36, 179, 235, 0.753);
 	background-image: url("images/piscineBG.jpg");
 	width: 500px;
@@ -54,7 +67,6 @@ img {
 	flex-direction: column;
 	flex-wrap: wrap;
 }
-
 .profileInfo{
 	display: flex;
 	position: absolute;
@@ -85,10 +97,177 @@ img {
 	/* outline: 2px solid rgb(3, 205, 255); */
 	z-index: 0;
 }
-main{
-	height: 100vh;
-	background-color: rgb(136, 95, 95);
+
+
+.box{
+	position: absolute;
+	margin-top: 150px;
 }
+
+
+.boxBG{
+	position: relative;
+	background-color: rgba(10, 10, 10, 0.767);
+	width: 500px;
+	height: 150px;
+	border-radius: 5px;
+	outline: 10px rgb(226, 141, 12);
+	outline-style: inset;
+	outline-offset: -2px;
+	backdrop-filter: blur(5px);
+
+}
+
+.boxText{
+	font-family: Ubuntu-Regular;
+}
+.boxTextTitle
+{
+	font-family: Ubuntu-Regular;
+	font-size: 19px;
+	position: absolute;
+	color: white;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.548);
+	width: 495px;
+	z-index: 1;
+}
+
+.inputNick {
+	position: absolute;
+	font-family: Ubuntu-Regular;
+	top: 50px;
+	left: 5%;
+	border: none;
+	outline: none;
+	border-radius: 15px;
+	padding: 10px;
+	background-color: #ccc;
+	box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+	transition: 100ms ease-in-out;
+}
+
+.inputNick:focus {
+	background-color: white;
+	transform: scale(1.05);
+	box-shadow: 1px 1px 10px rgba(3, 205, 255, 0.747), 1px 1px 10px #04beecc2;
+}
+
+.inputQuote{
+	position: absolute;
+	font-family: Ubuntu-Regular;
+	top: 50px;
+	right: 5%;
+	border: none;
+	outline: none;
+	border-radius: 15px;
+	padding: 10px;
+	background-color: #ccc;
+	box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+	transition: 100ms ease-in-out;
+}
+
+.inputQuote:focus {
+	background-color: white;
+	transform: scale(1.05);
+	box-shadow: 1px 1px 10px rgba(3, 205, 255, 0.747), 1px 1px 10px #04beecc2;
+}
+
+.boxButton{
+	position: absolute;
+	font-family: Ubuntu-Regular;
+	font-size: 20px;
+	width: 120px;
+	bottom: 10%;
+	left: 185px;
+	transition: 100ms ease-in-out;
+	background-color: #ccc;
+	border-radius: 15px;
+}
+.boxButton:hover{
+	transform:scale(1.25);
+}
+.boxButton:active{
+	transition: 1ms ease-in;
+	color: rgb(70, 70, 70);
+	transform:scale(1.05);
+	backdrop-filter: blur(5px);
+	box-shadow: 1px 1px 10px rgba(226, 141, 12, 0.747), 1px 1px 10px rgba(226, 141, 12, 0.747);
+
+}
+
+main{
+	position: relative;
+	height: 100vh;
+	/* overflow: hidden; */
+	/* background-color: rgb(136, 95, 95); */
+	/* background-image: url('images/background.jpeg'); */
+	/* height: 500px; */
+	/* background-position: center;
+	background-repeat: no-repeat;
+	background-size:100% auto; */
+}
+.bgImg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('images/background.jpeg');
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.middleDiv{
+	position: absolute;
+	left: -10%;
+	top: -50%;
+	height: 963px;
+	width: 600px;
+	backdrop-filter: blur(5px);
+	filter: drop-shadow(0px 0px 0.8rem rgb(0, 0, 0));
+
+	
+}
+
+.middleDivText{
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: aliceblue;
+	background-color: #000000;
+	width: 500px;
+}
+
+.middleDivIcons{
+	/* position: absolute; */
+	/* left: 35%; */
+	position: relative;
+	/* display: flex; */
+	/* gap: 50px; */
+	top: 96%;
+	left: 30%;
+	/* flex-direction: row; */
+	justify-content: center;
+}
+
+.middleDivIcons img{
+	width: 10%;
+	height: auto;
+	margin-right: 50px;
+}
+
+.centerDiv{
+	position: absolute;
+
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+}
+
 @font-face {
 	font-family: Ubuntu-Regular;
 	src: url(fonts/Ubuntu-Regular.ttf);
