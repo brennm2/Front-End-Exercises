@@ -208,11 +208,11 @@ main{
     position: absolute;
     height: 100%;
     width: 100%;
+	background-size: cover;
     background-image: url('images/background.jpeg');
 	background-position: center;
 	background-repeat: no-repeat;
-    /* background-position: center; */
-    /* background-repeat: repeat; */
+	overflow: hidden;
 }
 
 .middleDiv{
@@ -230,12 +230,15 @@ main{
 .middleDivText{
 	position: absolute;
 	font-family: Ubuntu-Italic;
-	bottom: 5%;
+	font-size: 15px;
+	bottom: 6%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
 	color: aliceblue;
-	background-color: #000000;
+	background-color: #000000d0;
+	filter: drop-shadow(0px 0px 0.5rem rgb(0, 0, 0));
+
 	width: 500px;
 }
 
@@ -243,26 +246,43 @@ main{
 	/* position: absolute; */
 	/* left: 35%; */
 	position: relative;
-	/* display: flex; */
+	display: flex;
+	align-items: baseline;
+	flex-wrap: wrap;
 	/* gap: 50px; */
 	top: 96%;
-	left: 30%;
+	left: 32%;
 	/* flex-direction: row; */
-	justify-content: center;
+	/* justify-content: center; */
 }
 
 .middleDivIcons img{
-	width: 10%;
-	height: auto;
+	width: 50px;
+	height: 50px;
+	position: absolute;
 	margin-right: 50px;
-	/* -webkit-filter: brightness(0.6)contrast(3.4)hue-rotate(217deg)saturate(9.9); */
-	/* filter: brightness(0.6)contrast(3.4)hue-rotate(217deg)saturate(9.9); */
 	filter: brightness(1);
-	filter: hue-rotate(500);
 	background-color: rgba(226, 140, 12, 0.418);
 	padding: 4px;
-	/* outline: 10px rgb(226, 141, 12); */
+	transition: 200ms ease-in;
+}
 
+.imgLinkedin{
+	left: 150px;
+}
+
+.imgLinkedin:hover{
+	position: absolute;
+	height: 60px;
+	width: 60px;
+	background-color: rgba(226, 141, 12, 0.747);
+}
+
+.imgGit:hover{
+	position: absolute;
+	height: 60px;
+	width: 60px;
+	background-color: rgba(226, 141, 12, 0.747);
 }
 
 .centerDiv{

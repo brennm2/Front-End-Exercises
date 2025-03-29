@@ -20,12 +20,10 @@ function getTime()
 
 function playSecret()
 {
-	const newMain = document.getElementById('mainDiv');
 	const newBG = document.querySelector('.bgImg');
 	const time = document.querySelector('.profileTime')
 	const middleDiv = document.querySelector('.middleDiv')
-
-	//newMain.style.backgroundColor = "black"
+	
 	if (secretAudio.paused){
 		secretAudio2.volume = 0.2
 		secretAudio2.play()
@@ -35,12 +33,10 @@ function playSecret()
 			time.textContent = "Current time: Rush B - "
 			newBG.style.backgroundImage = "url('images/backgroundSecret.jpeg')";
 			newBG.style.backgroundColor = "black"
+			newBG.style.backgroundSize = "contain";
 			middleDiv.style.backdropFilter = 'none';
 			middleDiv.style.boxShadow = 'none';
 		}, 1200);
-		console.log(newBG); // Verifica se o elemento foi selecionado
-		console.log(newBG.style.backgroundImage); // Verifica o estilo aplicado
-		console.log(newMain.style.backgroundImage); // Verifica o estilo aplicado
 	}
 }
 
